@@ -8,9 +8,28 @@
     }
 
     a {
-        font-family: Verdana, Tahoma, sans-serif;
-        color: white;
-        text-decoration: white;
-        margin: 0 0.75rem;
+
+      font-family: Verdana, Tahoma, sans-serif;
+      color: white;
+      text-decoration: white;
+      padding: 0 0.75rem;
+
+      position: relative;
+      display: inline-block;
+      font-weight: 800;
+      overflow: hidden;
+      background: linear-gradient(to right, cornflowerblue, cornflowerblue 50%, white 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      transition: background-position 275ms ease;
+      text-decoration: none;
+      &:hover {
+        background-position: 0 100%;
+      }
     }
 }
